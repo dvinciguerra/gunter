@@ -22,6 +22,8 @@ module Gunter
         else
           Gunter::View::Text.send(template, data)
         end
+      rescue NoMethodError
+        raise Gunter::TemplateError, "Template '#{template}' not found"
       end
     end
   end
