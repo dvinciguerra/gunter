@@ -7,6 +7,8 @@ module Gunter
 
   # Gunter error class
   class Error < StandardError; end
+  class ModelError < Error; end
+  class TemplateError < Error; end
 
   class << self
     # Get gunter gem version
