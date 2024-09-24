@@ -9,9 +9,16 @@ gemspec
 group :development, :test do
   gem 'rake'
 
+  gem 'factory_bot'
+  gem 'faker'
   gem 'rspec'
+  gem 'simplecov'
+  gem 'webmock'
+
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
-  gem 'simplecov', require: false
+
   gem 'solargraph', require: false
+
+  gem 'rubycritic', require: false
 end
